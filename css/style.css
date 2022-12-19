@@ -7,6 +7,7 @@
 
 body {
     background-color: #101010;
+    min-width: 563px;
 }
 
 header, #inicio, #sobre, #habilidades, #projetos {
@@ -153,7 +154,7 @@ a.btn:hover {
 #habilidades {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: space-around;
     flex-direction: column;
 }
@@ -202,8 +203,11 @@ a.btn:hover {
     background-color: #191919;
 }
 
-
 @media(max-width: 844px) {
+    #inicio {
+        justify-content: center;
+    }
+    
     .sobre-infos {
         justify-content: center;
     }
@@ -218,28 +222,27 @@ a.btn:hover {
 }
 
 @media(max-width: 699px) {
-    .inicio-infos h1 {
-        font-size: 80px;
+    .centralizador-1 {
+        justify-content: center;
     }
 
-    .inicio-infos h2 {
-        font-size: 45px;
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
     }
-}
-
-@media(max-width: 699px) {
+    
+    #habilidades {
+        justify-content: space-evenly;
+    }
+    
     .inicio-infos h1 {
         font-size: 75px;
     }
 
     .inicio-infos h2 {
         font-size: 40px;
-    }
-}
-
-@media(max-width: 586px) {
-    .centralizador-1 {
-        justify-content: center;
     }
 }
 
@@ -253,32 +256,3 @@ a.btn:hover {
     }
 }
 
-@media(max-width: 494px) {
-    .inicio-infos h1 {
-        font-size: 65px;
-    }
-
-    .inicio-infos h2 {
-        font-size: 30px;
-    }
-}
-
-@media(max-width: 458px) {
-    .inicio-infos h1 {
-        font-size: 60px;
-    }
-
-    .inicio-infos h2 {
-        font-size: 25px;
-    }
-}
-
-@media(max-width: 425px) {
-    .inicio-infos h1 {
-        font-size: 55px;
-    }
-
-    .inicio-infos h2 {
-        font-size: 20px;
-    }
-}
